@@ -1,0 +1,9 @@
+[submodule "webapp"]
+	path = webapp
+	url = git@github.com:buenos-casa/webapp.git
+[submodule "data"]
+	path = data
+	url = git@github.com:buenos-casa/data.git
+[submodule "analysis"]
+	path = analysis
+	url = git@github.com:buenos-casa/analysis.git
