@@ -34,6 +34,7 @@ sports = pd.read_csv('data/Datasets/Sports/sports_table.csv')
 sports.to_sql('SPORT', conn, if_exists='replace', index=False)
 
 importance = pd.read_csv('analysis/MIR_Feature_Selection_Results/importance.csv')
+importance.columns = ['id', 'feature', 'score', 'year', 'b_id']
 importance.to_sql('IMPORTANCE', conn, if_exists='replace', index=False)
 
 proper_barrios_rent = pd.read_json('data/properati_data/rent/barrios_rent.json')
