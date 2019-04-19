@@ -33,6 +33,9 @@ humanity.to_sql('HUMANITY', conn, if_exists='replace', index=False)
 sports = pd.read_csv('data/Datasets/Sports/sports_table.csv')
 sports.to_sql('SPORT', conn, if_exists='replace', index=False)
 
+importance = pd.read_csv('analysis/MIR_Feature_Selection_Results/importance.csv')
+importance.to_sql('IMPORTANCE', conn, if_exists='replace', index=False)
+
 proper_barrios_rent = pd.read_json('data/properati_data/rent/barrios_rent.json')
 proper_barrios_rent.to_sql('RENT', conn, if_exists='replace', index=False)
 
