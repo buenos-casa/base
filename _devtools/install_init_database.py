@@ -37,14 +37,14 @@ importance = pd.read_csv('analysis/MIR_Feature_Selection_Results/importance.csv'
 importance.columns = ['id', 'feature', 'score', 'year', 'b_id']
 importance.to_sql('IMPORTANCE', conn, if_exists='replace', index=False)
 
-proper_barrios_rent = pd.read_json('data/properati_data/rent/barrios_rent.json')
+proper_barrios_rent = pd.read_csv('data/Metrics/rent/barrio_stats.csv')
 proper_barrios_rent.to_sql('RENT', conn, if_exists='replace', index=False)
 
-proper_barrios_rent = pd.read_json('data/properati_data/rent/barrios_month.json')
+proper_barrios_rent = pd.read_csv('data/Metrics/rent/barrio_month_stats.csv')
 proper_barrios_rent.to_sql('RENT_MO', conn, if_exists='replace', index=True)
 
-proper_barrios_sell = pd.read_json('data/properati_data/sell/all_time.json')
+proper_barrios_sell = pd.read_csv('data/Metrics/purchase/barrio_stats.csv')
 proper_barrios_sell.to_sql('SELL', conn, if_exists='replace', index=False)
 
-proper_barrios_sell = pd.read_json('data/properati_data/sell/month.json')
+proper_barrios_sell = pd.read_csv('data/Metrics/purchase/barrio_month_stats.csv')
 proper_barrios_sell.to_sql('SELL_MO', conn, if_exists='replace', index=True)
