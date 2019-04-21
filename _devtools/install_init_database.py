@@ -12,7 +12,7 @@ c = conn.cursor()
 communes = pd.read_csv('data/communes.csv')
 communes.drop(['count'], axis=1).to_sql('COMMUNES', conn, if_exists='replace', index=True)
 
-barrio = pd.read_csv('data/barrio_table.csv')
+barrio = pd.read_csv('data/barrio_summary.csv')
 barrio.to_sql('BARRIOS', conn, if_exists='replace', index=False)
 
 census = pd.read_csv('data/census/cleaned_data.csv')
