@@ -37,6 +37,9 @@ importance = pd.read_csv('analysis/MIR_Feature_Selection_Results/importance.csv'
 importance.columns = ['id', 'feature', 'score', 'year', 'b_id']
 importance.to_sql('IMPORTANCE', conn, if_exists='replace', index=False)
 
+cheat = pd.read_csv('analysis/cheat_analysis/cheat_properties.csv')
+cheat.to_sql('MISLABELLED', conn, if_exists='replace', index=False)
+
 proper_barrios_rent = pd.read_csv('data/Metrics/rent/barrio_stats.csv')
 proper_barrios_rent.to_sql('RENT', conn, if_exists='replace', index=False)
 
