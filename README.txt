@@ -4,6 +4,6 @@ This package is a collection of all the source code and data used to create the 
 This current repository is a combination of all repos for maximum portability and has scripts that update data in the webapp based on what is in the data and analytics repositories.
 
 # Installation
-To run the web application follow the instructions in the ReadMe under the webapp directory
-To re-run or view data cleaning tasks follow the instructions under the data directory
-Finally to view the analytics methods and run them for yourself, follow instructions in the analytics directory.
+To run the web application follow the instructions in the ReadMe.md under the webapp directory
+To re-run or view data cleaning tasks follow the instructions in ReadMe.md under the data directory
+Finally to view the analytics methods and run them for yourself, follow instructions in ReadMe.md in the analytics directory.
